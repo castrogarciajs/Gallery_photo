@@ -1,0 +1,21 @@
+:root {
+  --color-main: #202020;
+  --color-letter: #ffffff;
+  --font-letter: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-letter);
+}
+
+html {
+  font-size: 16px;
+  color: var(--color-letter);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-main);
+}
