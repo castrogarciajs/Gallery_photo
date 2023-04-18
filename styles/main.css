@@ -1,6 +1,7 @@
 :root {
   --color-main: #202020;
-  --color-letter: #ffffff;
+  --color-letter: #FFFFFF;
+  --color-hover: #FF6000;
   --font-letter: Arial, Helvetica, sans-serif;
 }
 
@@ -19,8 +20,39 @@ html {
 body {
   background-color: var(--color-main);
 }
-
+a {
+    text-decoration: none;
+    color: var(--color-letter)
+}
 ul {
     text-decoration: none;
     list-style: none;
+}
+nav {
+    box-shadow: 0px 5px 1px 10px var(--color-green-shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    
+    height: 5rem;
+}
+.option-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.list-navbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.list:hover {
+    color: var(--color-hover);
+    cursor: pointer;
+    transition: color 0.3s;
 }
