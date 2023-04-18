@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export function Header() {
   return (
     <header>
@@ -8,10 +10,13 @@ export function Header() {
         <div className="option-navbar">
           <ul className="list-navbar">
             <li>
-              <a className="list" href="">GALLERY</a>
+              <Link className="list" href="/Gallery">GALLERY</Link>
             </li>
             <li>
-              <a className="list" href="">CARRUSEL</a>
+              <Link className="list" href="/Carrusel">CARRUSEL</Link>
+            </li>
+            <li>
+              <Link className="list" href="/Public">PUBLIC</Link>
             </li>
           </ul>
         </div>
