@@ -5,10 +5,14 @@ export function Header() {
         <div>
           <h2>GALLERY NEXT</h2>
         </div>
-        <div>
-          <ul>
-            <li>GALLERY</li>
-            <li>CARRUSEL</li>
+        <div className="option-navbar">
+          <ul className="list-navbar">
+            <li>
+              <a className="list" href="">GALLERY</a>
+            </li>
+            <li>
+              <a className="list" href="">CARRUSEL</a>
+            </li>
           </ul>
         </div>
       </nav>
