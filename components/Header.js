@@ -7,7 +7,8 @@ export function Header() {
         </div>
         <div>
           <ul>
-            <li>Carrusel</li>
+            <li>GALLERY</li>
+            <li>CARRUSEL</li>
           </ul>
         </div>
       </nav>
