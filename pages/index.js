@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>GALLERY</title>
+        <title>GALLERY -S</title>
       </Head>
       <div>home</div>
     </>
