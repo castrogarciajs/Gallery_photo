@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>GALLERY</title>
       </Head>
-      <Header />
+      <div>home</div>
     </>
   );
 }
