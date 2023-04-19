@@ -1,4 +1,4 @@
-import Header from "@/components/Layout.js";
+import Header from "@/components/Header.js";
 
 function Layout({ children }) {
   return (
