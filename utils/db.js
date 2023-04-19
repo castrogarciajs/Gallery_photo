@@ -1,4 +1,10 @@
 import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  Timestamp,
+} from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: process.env.API_KEY,
@@ -8,4 +14,12 @@ const firebaseConfig = {
   messagingSenderId: process.env.MESSAGE_ID,
   appId: process.env.APP_ID,
 };
-export const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+const saveImage = ({ title, image }) =>
+  addDoc(collection(db, "images"), {
+    title,
+    image,
+    date: Timestamp.fromDate(new Date()),
+  });
